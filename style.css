@@ -86,7 +86,7 @@ header nav ul li a {
 }
 
 .wrapper section.main {
-  background: url(/Assets/viewcity.jpg);
+  background: url(Assets/viewcity.jpg);
   background-size: cover;
 }
 
@@ -102,12 +102,12 @@ header nav ul li a {
 
 .wrapper section.desc,
 .wrapper section.other {
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1.6rem;
 }
 
 .wrapper section.desc {
-  background: #DDBB5F;
+  background: #ddbb5f;
 }
 
 .wrapper section.desc .read-btn {
@@ -119,7 +119,7 @@ header nav ul li a {
 .wrapper section.other input {
   width: calc(100% - 2em);
   padding: 1em;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin-bottom: 1em;
 }
 
@@ -129,7 +129,7 @@ header nav ul li a {
   color: white;
   padding: 1em;
   border: none;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 @media only screen and (min-width: 768px) {

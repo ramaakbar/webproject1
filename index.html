@@ -1,120 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>latianweb1</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-    </style>
-  </head>
 
-  <body>
-    <header>
-      <a href="#" class="logo"></a>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>latianweb1</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  </style>
+</head>
 
-    <div class="wrapper">
-      <section class="main">
-        <div class="inner">
-          <div class="clipper">
-            <h1>LOREM IPSUM</h1>
-          </div>
-          <div class="anim-panel">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
-              reprehenderit
-            </p>
-          </div>
+<body>
+  <header>
+    <a href="#" class="logo"></a>
+    <nav>
+      <ul>
+        <li><a href="https://ramaakbar.github.io/">Home</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <section class="main">
+      <div class="inner">
+        <div class="clipper">
+          <h1>LOREM IPSUM</h1>
         </div>
-      </section>
-
-      <section class="desc">
-        <div class="inner">
-          <div class="clipper">
-            <h2>LOREM IPSUM</h2>
-          </div>
-          <div class="anim-panel">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
-              reprehenderit dolore inventore consequatur at necessitatibus sint
-              soluta laborum
-            </p>
-            <a href="#" class="read-btn">READ MORE</a>
-          </div>
+        <div class="anim-panel">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
+            reprehenderit
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="other">
-        <div class="inner">
-          <div class="clipper">
-            <h2>LOREM IPSUM</h2>
-          </div>
-          <div class="anim-panel">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <input type="text" name="email" placeholder="Email Address" />
-            <button class="cta">Buy now</button>
-          </div>
+    <section class="desc">
+      <div class="inner">
+        <div class="clipper">
+          <h2>LOREM IPSUM</h2>
         </div>
-      </section>
-    </div>
+        <div class="anim-panel">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
+            reprehenderit dolore inventore consequatur at necessitatibus sint
+            soluta laborum
+          </p>
+          <a href="#" class="read-btn">READ MORE</a>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <section class="other">
+      <div class="inner">
+        <div class="clipper">
+          <h2>LOREM IPSUM</h2>
+        </div>
+        <div class="anim-panel">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <input type="text" name="email" placeholder="Email Address" />
+          <button class="cta">Buy now</button>
+        </div>
+      </div>
+    </section>
+  </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function (event) {
-        window.addEventListener(
-          "load",
-          function (e) {
-            document.body.style.display = "block";
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-            var tl = new TimelineMax();
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      window.addEventListener(
+        "load",
+        function (e) {
+          document.body.style.display = "block";
 
-            tl.staggerFrom(
-              "section",
-              2,
-              {
-                opacity: 0,
-                scale: 0.5,
-                ease: Power2.easeOut,
-              },
-              0.2
-            );
+          var tl = new TimelineMax();
 
-            tl.staggerFrom(
-              "h1,h2",
-              0.5,
-              {
-                opacity: 0,
-                y: -40,
-                ease: Power2.easeInOut,
-              },
-              0.2,
-              "-=2"
-            );
-            tl.staggerFrom(
-              ".anim-panel",
-              1,
-              {
-                opacity: 0,
-                y: -40,
-                ease: Power2.easeInOut,
-              },
-              0.2,
-              "-=1.5"
-            );
-          },
-          false
-        );
-      });
-    </script>
-  </body>
+          tl.staggerFrom(
+            "section",
+            2, {
+              opacity: 0,
+              scale: 0.5,
+              ease: Power2.easeOut,
+            },
+            0.2
+          );
+
+          tl.staggerFrom(
+            "h1,h2",
+            0.5, {
+              opacity: 0,
+              y: -40,
+              ease: Power2.easeInOut,
+            },
+            0.2,
+            "-=2"
+          );
+          tl.staggerFrom(
+            ".anim-panel",
+            1, {
+              opacity: 0,
+              y: -40,
+              ease: Power2.easeInOut,
+            },
+            0.2,
+            "-=1.5"
+          );
+        },
+        false
+      );
+    });
+  </script>
+</body>
+
 </html>
